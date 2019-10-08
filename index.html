@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        li:nth-child(1){
+            order: 3;
+        }
+        li:nth-child(2){
+            order: 1;
+        }
+        li:nth-child(3){
+            order: 2;
+        }
+        li {
+            display: inline-block;
+            padding: 1rem;
+            background-color: hsl(240, 50%, 50%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Header</h1>
+    <nav>
+        <ul>
+            <li data-pokemon-id="1">Home <button>DELETE</button></li>
+            <li data-pokemon-id="2">Products <button>DELETE</button></li>
+            <li data-pokemon-id="3">About <button>DELETE</button></li>
+        </ul>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>
